@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>เกี่ยวกับมหาลัย</title>
+  <title>หน่วยงาน</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <style>
     body {
@@ -13,6 +13,59 @@
       background-attachment: fixed;
       background-size: 100% 100%;
     }
+    body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
   </style>
 </head>
 
@@ -21,25 +74,52 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
   </script>
 
-  <div class="container is-max-desktop">
-    <div class="notification has-background-success-dark">
-    </div>
-  </div>
-
-  <div class="container is-max-desktop" style="-ms-text-kashida-space: 0%;">
-    <div class="notification has-background-white-bis ">
-      <div class="columns">
-        <div class="column">
-          <h1 class="title is-size-5 has-text-success-dark">
-            <figure><img
-                src="https://upload.wikimedia.org/wikipedia/th/thumb/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png/270px-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
-                width="96" height="96" style="vertical-align:middle">MAEJO UNIVERSITY <sub
-                class="is-size-6 has-text-left">มหาวิทยาลัยแม่โจ้</sub></figure>
-            <div class="tabs is-right">
-          </h1>
+<div class="container is-max-desktop ">
+  <div class="notification has-background-success-dark">
+    <div class="column is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">
+     
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content has-text-white-bis">
+          <a href="index.html">หน้าหลัก</a>
+          <a href="about.html">เกี่ยวกับมหาลัย</a>
+          <a href="http://www.education.mju.ac.th/www/">การศึกษา</a>
+          <a href="research.html">วิจัยและบริการวิชาการ</a>
+          <a href="life.html">รอบรั้วมหาวิทยาลัย</a>
         </div>
+      </div>
+      
+      <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+        
+    </div>
 
-        <div class="field has-addons has-addons-right">
+  </div>
+</div>
+
+
+<div class="container is-max-desktop ">
+  <div class="notification has-background-white-bis">
+    <div class="column is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">
+      <div class="columns is-mobile is-four-fifths">
+        <div class="column"><h1 class="title is-size-5 has-text-success-dark ">
+          <figure><img
+              src="https://upload.wikimedia.org/wikipedia/th/thumb/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png/270px-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+              width="50" height="50" style="vertical-align:middle">MAEJO UNIVERSITY <sub
+              class="is-size-7 has-text-left">มหาวิทยาลัยแม่โจ้</sub></figure>
+          <div class="tabs is-right">
+        </h1></div>
+       <div class="column">
+        <div class="field has-addons has-addons-right ">
           <div class="control ">
             <input class="input is-size-7 extarea is-warning" type="search" placeholder="Find a repository">
           </div>
@@ -50,31 +130,57 @@
           </div>
         </div>
 
+       </div>
       </div>
-      <nav class="breadcrumb is-right has-text-success-dark">
-        <ul>
-          <li> <a href="index.html">หน้าหลัก</a></li>
-          <li><a href="about.html">เกี่ยวกับมหาลัย</a></li>
-          <li><a href="Organization.html">หน่วยงาน</a></li>
-          <li><a href="http://www.education.mju.ac.th/www/">การศึกษา</a></li>
-          <li><a href="research.html">วิจัยและบริการวิชาการ</a></li>
-          <li><a href="life.html">รอบรั้วมหาวิทยาลัย</a></li>
-        </ul>
-      </nav>
+     
     </div>
+
   </div>
+</div>
+
+<div class="container is-max-desktop is-hidden-mobile " >
+  <div class="notification has-background-white-bis ">
+    <div class="columns">
+      <div class="column ">
+        <h1 class="title is-size-5 has-text-success-dark ">
+          <figure><img
+              src="https://upload.wikimedia.org/wikipedia/th/thumb/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png/270px-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+              width="96" height="96" style="vertical-align:middle">MAEJO UNIVERSITY <sub
+              class="is-size-6 has-text-left">มหาวิทยาลัยแม่โจ้</sub></figure>
+          <div class="tabs is-right">
+        </h1>
+      </div>
+
+      <div class="field has-addons has-addons-right ">
+        <div class="control ">
+          <input class="input is-size-7 extarea is-warning" type="search" placeholder="Find a repository">
+        </div>
+        <div class="control">
+          <a class="button is-info is-size-7 is-size-7-mobile">
+            ค้นหา
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+    <nav class="breadcrumb is-right has-text-success-dark ">
+      <ul>
+        <li> <a href="index.html">หน้าหลัก</a></li>
+        <li><a href="about.html">เกี่ยวกับมหาลัย</a></li>
+        <li><a href="Organization.html">หน่วยงาน</a></li>
+        <li><a href="http://www.education.mju.ac.th/www/">การศึกษา</a></li>
+        <li><a href="research.html">วิจัยและบริการวิชาการ</a></li>
+        <li><a href="life.html">รอบรั้วมหาวิทยาลัย</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
   <div class="container is-max-desktop">
     <div class="notification">
       <div class="columns">
-        <div class="column is-three-fifths">
-          <figure class="image is-3by1 has-image-centered" style="width:70%;">
-            <img
-              src="https://image.freepik.com/free-vector/businessmen-work-with-laptops-graph-columns-business-hierarchy-hierarchical-organization-levels-hierarchy-concept-white-background_335657-2031.jpg">
-          </figure>
-        </div>
         <div class="column">
-          <div class="column is-full has-text-right"><span class="tag "></span></div>
           <div class="column is-full has-text-right"><span
               class="tag is-success is-medium has-text-right is-rounded is-size-5">หน่วยงาน</span></div>
         </div>
