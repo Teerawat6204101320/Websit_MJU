@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>มหาวิทยาลัยแม่โจ้</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+  <style>
+    .mySlides {
+      display: none;
+    }
+
+    body {
+      background-image: url('https://scontent.fbkk12-2.fna.fbcdn.net/v/t31.0-8/266004_408041439232348_1468456271_o.jpg?_nc_cat=104&ccb=2&_nc_sid=d2e176&_nc_eui2=AeGvqonK11z2vPJ8fNbm2SjzWbo_brRctYRZuj9utFy1hHCbZrbgLLlx5xwDfwAu52Mrb-Zd8NaikHCrqqaqCGd8&_nc_ohc=MP1Ozabo94MAX8OtZvk&_nc_ht=scontent.fbkk12-2.fna&oh=20d4a3a1363a4244540341e927da382d&oe=6008FFDF');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    #myDIV {
+      width: 400px;
+      height: 400px;
+      background-repeat: no-repeat, repeat;
+      background-image: url("https://image.freepik.com/free-vector/worldmap-background-design_1127-2318.jpg");
+      background-blend-mode: lighten;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    .mySlides1,
+    .mySlides2 {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover,
+    .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+  </script>
+
+  <div class="container is-max-desktop">
+    <div class="notification has-background-success-dark">
+    </div>
+  </div>
+
+  <div class="container is-max-desktop" style="-ms-text-kashida-space: 0%;">
+    <div class="notification has-background-white-bis ">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-size-5 has-text-success-dark">
+            <figure><img
+                src="https://upload.wikimedia.org/wikipedia/th/thumb/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png/270px-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+                width="96" height="96" style="vertical-align:middle">MAEJO UNIVERSITY <sub
+                class="is-size-6 has-text-left">มหาวิทยาลัยแม่โจ้</sub></figure>
+            <div class="tabs is-right">
+          </h1>
+        </div>
+
+        <div class="field has-addons has-addons-right">
+          <div class="control ">
+            <input class="input is-size-7 extarea is-warning" type="search" placeholder="Find a repository">
+          </div>
+          <div class="control">
+            <a class="button is-info is-size-7 is-size-7-mobile">
+              ค้นหา
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <nav class="breadcrumb is-right has-text-success-dark">
+        <ul>
+          <li><a href="about.html">เกี่ยวกับมหาลัย</a></li>
+          <li><a href="Organization.html">หน่วยงาน</a></li>
+          <li><a href="http://www.education.mju.ac.th/www/">การศึกษา</a></li>
+          <li><a href="research.html">วิจัยและบริการวิชาการ</a></li>
+          <li><a href="life.html">รอบรั้วมหาวิทยาลัย</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container is-max-desktop" height="1000">
+
+    <div class="" style="width:100% " height="1000">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/f6f28e86530945b198166086e692757d.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/3b5203c073d04657b8b98b8e4d609182.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/aa878d2fe1a84cbeaf7233b405d18f27.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/d99bb9527976445389729502042b82d6.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/b910c6184cf846188c66a0de81f869f2.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/b5aaea3378d046f4beb7df2cf7962f46.jpg">
+      <img class="mySlides" src="https://erp.mju.ac.th/picture/banner/a65a97d89b08441f919f3966479b633b.jpg">
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="notification">
+      <div class="container is-max-desktop">
+        <div class="notification">
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/1a54a74acb8b4f41812b2f44933048fas.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3930">คณะวิทยาศาสตร์ ม.แม่โจ้
+                        จัดกิจกรรมค่ายวิทยาศาสตร์-คณิตศาสตร์ โรงเรียนจอมทอง</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/d2e66ac739054b6fa79a45b011187afbs.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3929">ผู้บริหาร ม.แม่โจ้
+                        มอบประกาศนียบัตร แก่นักศึกษาที่สำเร็จการอบรม </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/02c6418016114be09c672a38a760967es.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3925">ม.แม่โจ้
+                        มอบประกาศนียบัตรแก่ผู้จบหลักสูตร บัณฑิตเกษตรพันธุ์ใหม่ รุ่นที่ 3 </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="notification">
+          <div class="columns">
+            <div class="column notification">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/653a1cc265744426905850eeb3466a37s.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3926">คณะบริหารธุรกิจ ม.แม่โจ้
+                        จัดอบรมหลักสูตรและศึกษาดูงาน Startup ด้านการเกษตร</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/1af014fa8d92458dbe4d4b5ad08a7db9s.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3927">ศิลปศาสตร์บริการวิชาการ
+                        เยือนถิ่นดอกคำใต้ แลกเปลี่ยนการดูแลตนเอง</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://erp.mju.ac.th/picture/information/3dc068c108c548a8b80742a6953dc59es.jpg"
+                      alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <a href="https://erp.mju.ac.th/informationDetail.aspx?newsId=3928">มหาวิทยาลัยแม่โจ้-ชุมพร
+                        กิจกรรมจิตอาสาทำความสะอาดหน้าหาดแม่โจ้-ชุมพร </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+          <span class="icon has-text-danger">
+            <i class="fas fa-angle-double-right"></i>
+          </span>
+          <a href="https://erp.mju.ac.th/informationIndex.aspx?tid=7">More</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="notification">
+        <div class="columns">
+          <div class="column is-one-quarter">
+            <span class="tag is-link is-success">MJU LINKS</span>
+            <div class="card has-text-centered ">
+              <h1> <span class="fa fa-paperclip ">
+                </span> นักศึกษา</h1>
+              <h2> <span class="fa fa-paperclip is-small">
+                </span> สมัครเข้าเรียน
+                <h2><span class="fa fa-paperclip is-small ">
+                  </span> บุคลากร</h2>
+                <h3><span class="fa fa-paperclip is-small ">
+                  </span> ศิษย์เก่า</h3>
+                <h4><span class="fa fa-paperclip is-small ">
+                  </span> ห้องสมุดกลาง</h4>
+                <h5><span class="fa fa-paperclip is-small ">
+                  </span> IT CENTER
+                </h5>
+            </div>
+            </h2>
+          </div>
+          <div class="column">
+            <span class="tag is-link is-success">PHOTO</span>
+
+
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="https://erp.mju.ac.th/picture/banner/475f1b24110f4c609a9e5c1fe1150ad2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides1">
+                <img src="https://erp.mju.ac.th/picture/banner/723b1baef31744c383244f3c998ea001.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides1">
+                <img
+                  src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.0-9/6743_550657368304087_709004507_n.jpg?_nc_cat=103&ccb=2&_nc_sid=19026a&_nc_eui2=AeGN8TJXmSg-vtnI0bz22HIK-Fu7vtDWYFP4W7u-0NZgUwiYELvzo7h39_WqBC1fc5LKZg33fkEc6I_mnoKc0Ukh&_nc_ohc=NSWzru0IZcoAX9J-1Kl&_nc_ht=scontent.fbkk12-4.fna&oh=80186b9f62e9b08281d7584fce141fb1&oe=60086C0C"
+                  style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <script>
+              var slideIndex = [1, 1];
+              var slideId = ["mySlides1", "mySlides2"]
+              showSlides(1, 0);
+              showSlides(1, 1);
+
+              function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+              }
+
+              function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) { slideIndex[no] = 1 }
+                if (n < 1) { slideIndex[no] = x.length }
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+              }
+            </script>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="notification has-background-success-dark ">
+        <div class="columns">
+          <div class="column is-one-third has-centered">
+            <div class="card notification ">
+              <div class="columns">
+                <div class="column ">
+                  <a href="https://www.youtube.com/channel/UCx5nb4vREQ7BY5fa4VYestg">
+                    <figure class="image is-32x32">
+                      <img src="https://i.pinimg.com/originals/46/02/cb/4602cbc18967da9c1eba7452905cd99b.png">
+                    </figure>
+                  </a>
+
+                </div>
+                <div class="column">
+                  <a href="https://www.facebook.com/MaejoUniversity">
+                    <figure class="image is-32x32">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png">
+                    </figure>
+                  </a>
+                </div>
+                <div class="column">
+                  <a href="http://line.me/ti/p/@maejouniversity">
+                    <figure class="image is-32x32">
+                      <img src="https://home.wandarandoshop.com/wp-content/uploads/2017/04/line-icon.png">
+                    </figure>
+                  </a>
+                </div>
+                <div class="column has-text-centered">
+                  <a href="https://www.instagram.com/maejouniversity/">
+                    <figure class="image is-32x32">
+                      <img src="https://p7.hiclipart.com/preview/462/874/418/5bbf4add2c4b8.jpg">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column is-full">
+                  <figure class="image is-480x480">
+                    <img
+                      src="https://www.mju.ac.th/main/images2015/Group-ig-fg-youtube/images/group-ig-fb-youtube_04.gif">
+                  </figure>
+                </div>
+              </div>
+
+              <div class="columns">
+                <div class="column is-full">
+                  <figure class="image is-480x480">
+                    <img src="https://www.mju.ac.th/main/images2015/Footer_Layout_05.gif">
+                  </figure>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="column">
+            <div class="columns">
+              <div class="column is-full">
+                <h1 class="is-size-6 has-text-white-bis">
+                  หน้าหลัก <sub> เกี่ยวกับมหาวิทยาลัย | หน่วยงาน | การศึกษา | วิจัยและบริการวิชาการ | รอบรั้วมหาวิทยาลัย
+                  </sub></h1>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-full">
+                <h1 class="is-size-6 has-text-white-bis">ข่าว <sub> ข่าวกิจกรรม | ข่าวประกาศทั่วไป | ข่าวรับสมัครงาน |
+                    ข่าวประกวดราคา</sub></h1>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-full">
+                <h1 class="is-size-6 has-text-white-bis">วิทยาเขต <sub> มหาวิทยาลัยแม่โจ้ - แพร่เฉลิมพระเกียรติ |
+                    มหาวิทยาลัยแม่โจ้ - ชุมพร</sub></h1>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-full">
+                <h1 class="is-size-6 has-text-white-bis">สื่อออนไลน์ <sub> MJU CHANNEL | MJU Radio</sub></h1>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-full">
+                <h1 class="is-size-6 has-text-white-bis">ที่พัก สัมมนา <sub>ศูนย์การศึกษาและฝึกอบรมนานาชาติ</sub></h1>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-full">
+                <div class="card">
+
+                  <div class="column is-full">
+                    <h1><sub>มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290</sub></h1>
+                  </div>
+
+                  <div class="column is-full">
+                    <h1><sub>โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU Map แผนที่มหาวิทยาลัย</sub>
+                    </h1>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
